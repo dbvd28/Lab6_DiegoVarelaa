@@ -17,7 +17,6 @@ import java.util.Scanner;
  * @author diego
  */
 public class Universo {
-    private String nombre;
     private ArrayList<Seresv> vivos=new ArrayList();
  private File archivo = null;
 
@@ -33,14 +32,6 @@ public class Universo {
         this.archivo = archivo;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public ArrayList<Seresv> getVivos() {
         return vivos;
     }
@@ -51,8 +42,10 @@ public class Universo {
 
     @Override
     public String toString() {
-        return "Universo "+ nombre ;
+        return "Universo{" + "vivos=" + vivos + ", archivo=" + archivo + '}';
     }
+
+   
      public void escribirArchivo() throws IOException {
         FileWriter fw = null;
         BufferedWriter bw = null;
