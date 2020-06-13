@@ -1,0 +1,10 @@
+Dr. Matsumoto;3;3;Shogunate;Amantó;
+Kazama;3;3;Onu;Amantó;
+Shiranui;3;3;Onu;Amantó;
+Susumu;3;3;Shinsengumi;Humano;
+Shinpachi;3;3;Shinsengumi;Humano;
+Heisuke;3;3;Shinsengumi;Humano;
+Soji;3;3;Shinsengumi;Humano;
+chizuru;3;3;Shinsengumi;Humano;
+Oume;3;3;Otros;Amantó;
+Serizawa;3;3;Otros;Amantó;

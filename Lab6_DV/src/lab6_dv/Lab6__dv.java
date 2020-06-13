@@ -549,26 +549,6 @@ public class Lab6__dv extends javax.swing.JFrame {
             String nombre = JOptionPane.showInputDialog(null, "Ingrese el nuevo nombre porfavor");
             Seresv v = (Seresv) cb_modsv.getSelectedItem();
             v.setNombre(nombre);
-            File f = null;
-            Scanner sc = null;
-            try {
-                sc = new Scanner(universo.toPath());
-                sc.useDelimiter(";");
-                String n,p,a,pl,r;
-                while (sc.hasNextLine()) {
-                    n = sc.next();
-                    p = sc.next();
-                    a = sc.next();
-                    pl=sc.next();
-                    r=sc.next();
-                    if (n.equals(((Seresv)cb_modsv.getSelectedItem()).getNombre())) {
-                        System.out.println("Estoay qui");   
-                    }
-                }
-            } catch (Exception e) {
-
-            }
-            sc.close();
             JOptionPane.showMessageDialog(null, "Se modifico con exito");
         } catch (Exception e) {
             e.printStackTrace();
