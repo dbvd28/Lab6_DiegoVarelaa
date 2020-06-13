@@ -1,2 +1,0 @@
-PEDRO;2;1;ad;Humano;
-cxzc;2;1;ad;Humano;

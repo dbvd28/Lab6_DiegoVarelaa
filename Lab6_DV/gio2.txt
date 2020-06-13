@@ -1,2 +1,0 @@
-Jorge;5;2;fs;Humano;
-sfsd;3;2;fs;Humano;

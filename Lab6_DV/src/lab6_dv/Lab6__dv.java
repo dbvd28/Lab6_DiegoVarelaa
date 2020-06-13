@@ -546,43 +546,29 @@ public class Lab6__dv extends javax.swing.JFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
         try {
-            FileReader fr = null;
-            BufferedReader br = null;
+            String nombre = JOptionPane.showInputDialog(null, "Ingrese el nuevo nombre porfavor");
+            Seresv v = (Seresv) cb_modsv.getSelectedItem();
+            v.setNombre(nombre);
+            File f = null;
+            Scanner sc = null;
             try {
-                String nombre = JOptionPane.showInputDialog(null, "Ingrese el nuevo nombre porfavor");
-                Seresv v = (Seresv) cb_modsv.getSelectedItem();
-                v.setNombre(nombre);
-
-                File f = universo;
-                fr = new FileReader(f);
-                br = new BufferedReader(fr);
-                String linea;
-                String[] tokens;
-                while ((linea = br.readLine()) != null) {
-                    tokens = linea.split(";");
-                    if (tokens[0].equals(((Seresv) cb_modsv.getSelectedItem()).getNombre())) {
-
-                        System.out.println("Aqui estoy");
-                        FileWriter fw = null;
-                        BufferedWriter bw = null;
-                        try {
-                            fw = new FileWriter(universo.getPath(), true);//obligatorio
-                            bw = new BufferedWriter(fw);
-                            bw.write(nombre);
-                            bw.flush();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        bw.close();
-                        fw.close();
-
+                sc = new Scanner(universo.toPath());
+                sc.useDelimiter(";");
+                String n,p,a,pl,r;
+                while (sc.hasNextLine()) {
+                    n = sc.next();
+                    p = sc.next();
+                    a = sc.next();
+                    pl=sc.next();
+                    r=sc.next();
+                    if (n.equals(((Seresv)cb_modsv.getSelectedItem()).getNombre())) {
+                        System.out.println("Estoay qui");   
                     }
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+
             }
-            br.close();
-            fr.close();
+            sc.close();
             JOptionPane.showMessageDialog(null, "Se modifico con exito");
         } catch (Exception e) {
             e.printStackTrace();

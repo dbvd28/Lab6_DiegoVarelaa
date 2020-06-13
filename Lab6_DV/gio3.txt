@@ -1,2 +1,0 @@
-Jorge;4;3;tierra;Humano;
-sf;2;2;fa;Humano;

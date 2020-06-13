@@ -1,2 +1,0 @@
-port;2;1;fds;Humano;
-sdf;2;1;fds;Humano;

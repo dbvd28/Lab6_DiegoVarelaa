@@ -1,2 +1,0 @@
-portin;2;1;es;Humano;
-fdsbfd;2;1;es;Humano;

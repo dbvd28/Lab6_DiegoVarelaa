@@ -1,0 +1,10 @@
+Dracarys;4;10;Neptuno;Humano;
+Rhaegal;4;10;Neptuno;Amantó;
+Josue;1;1;Neptuno;Amantó;
+Rodrigo;1;1;Neptuno;Amantó;
+Rafael;4;1;Neptuno;Amantó;
+Hoaku;4;1;Neptuno;Amantó;
+Sepukku;4;1;Neptuno;Amantó;
+John Snow;4;10;Mercurio;Humano;
+Brian;7;18;Mercurio;Humano;
+Daenerys;7;18;Mercurio;Humano;
